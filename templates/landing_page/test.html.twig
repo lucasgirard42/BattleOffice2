@@ -1,0 +1,6 @@
+
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn" name="payement" value="stripe">{{ button_label|default('stripe') }}</button>
+    <button class="btn" name="payement" value="paypal">{{ button_label|default('paypal') }}</button>
+{{ form_end(form) }}
